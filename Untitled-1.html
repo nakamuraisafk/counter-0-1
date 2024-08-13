@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    
+    <style>
+        /* Estilo para os botões */
+        button {
+            cursor: pointer; /* Muda o cursor para um ponteiro ao passar sobre o botão */
+            padding: 10px 20px; /* Adiciona um espaçamento interno aos botões */
+            margin: 5px; /* Adiciona uma margem ao redor dos botões */  
+            border: none; /* Remove a borda padrão dos botões */
+            background-color: #b8b7e0; /* Define a cor de fundo dos botões */
+            color: white; /* Define a cor do texto dos botões */
+            font-size: 16px; /* Define o tamanho da fonte dos botões */
+            border-radius: 5px; /* Adiciona bordas arredondadas aos botões */
+        }
+        button:hover {
+            background-color: #57e7ab; /* Muda a cor de fundo dos botões ao passar o mouse sobre eles */
+        }
+
+        /* Estilo para o texto "Contador" */
+        #contador {
+            font-size: 20px; /* Aumenta o tamanho da fonte */
+            font-weight: bold; /* Torna o texto negrito */
+        }
+        .label {
+            font-weight: bold; /* Torna o texto negrito */
+            color: #333; /* Define a cor do texto para um tom mais escuro */
+        }
+        .value {
+            font-size: 24px; /* Aumenta o tamanho da fonte para o valor */
+            color: #000; /* Define a cor do texto para preto */
+        }
+    </style>
+</head>
+<body>
+    <p id="contador">Contador: 0</p> <!-- Elemento onde o valor do contador será exibido -->
+    <button onclick="incrementar()">Incrementar</button> <!-- Botão para incrementar o contador -->
+    <button onclick="reiniciar()">Reiniciar</button> <!-- Botão para reiniciar o contador -->
+
+    <script>
+        let contador = 0; // Variável global para armazenar o valor atual do contador
+
+        function incrementar() {
+            contador++; // Incrementa o valor da variável contador em 1
+            document.getElementById('contador').textContent = 'Contador: ' + contador; 
+            // Atualiza o conteúdo do elemento <p> com o novo valor do contador
+        }
+
+        function reiniciar() {
+            contador = 0; // Define o valor da variável contador como 0
+            document.getElementById('contador').textContent = 'Contador: ' + contador;
+            // Atualiza o conteúdo do elemento <p> com o valor 0 após reiniciar o contador
+        }
+    </script>
+</body>
+</html>
