@@ -13,4 +13,8 @@ Este é um projeto simples de contador em HTML, CSS e JavaScript. O contador com
 * JavaScript: Funcionalidade para incrementar e reiniciar o contador.
 
 
+![CONTADOR](https://github.com/user-attachments/assets/c40b486e-8ff1-47af-af16-c2c219aaff9c)
+
+
+
 > A lesson without pain is meaningless. That’s because no one can gain without sacrificing something. But by enduring that pain and overcoming it, he shall obtain a powerful, unmatched heart… a Fullmetal heart. ― Full Metal Alchemist
